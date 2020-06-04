@@ -18,25 +18,18 @@ export const Section = styled.section`
             justify-content: center;
             align-items: center;
         }
-    }
 
-    @media(max-width: 500px) {
         div {
             width: 100%;
             height: 100vh;
         }
-    }
 
-    @media(max-width: 500px) {
         img {
             display: none;
         }
-    }
 
-    @media(max-width: 500px) {
         input, button {
             width: 100%;
         }
     }
-
 `;
