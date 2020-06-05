@@ -4,6 +4,7 @@
 - Troquei as 'functions' por arrow functions
 - Separei os components Button e Input
 - Corrigo os midias query
+- Usando useRef nos inputs
 
 ## PENDENTES
 
