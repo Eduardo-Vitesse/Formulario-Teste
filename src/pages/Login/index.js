@@ -1,14 +1,31 @@
-import React from 'react'
-import Form from '../../components/Form'
-import { Section } from './style'
+import React from "react";
 
-function Login() {
+//import DivAssetTop from "../../components/DivAssetTop";
+import InputsFields from "../../components/Inputs";
+import SubmitButton from "../../components/Button";
 
-    return (
-        <Section>
-            <Form/>
-        </Section>
-    )
-}
+import { Section, Wrapper, FormFields, IconBotton, IconTop } from "./style";
 
-export default Login
+import assetBotton from "../../assets/rectangle-3.png";
+import assetTop from "../../assets/rectangle-4.png";
+
+const Form = () => {
+	return (
+		<>
+			<Section>
+				<Wrapper>
+					{/* <DivAssetTop /> */}
+					<IconTop src={assetTop} />
+					<FormFields autoComplete="off">
+						<InputsFields type="email" placeholder="EMAIL" />
+						<InputsFields type="password" placeholder="SENHA" />
+						<SubmitButton />
+					</FormFields>
+				</Wrapper>
+				<IconBotton src={assetBotton} />
+			</Section>
+		</>
+	);
+};
+
+export default Form;
