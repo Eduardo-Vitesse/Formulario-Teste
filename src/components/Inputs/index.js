@@ -7,19 +7,23 @@ const InputFields = (props) => {
 	const activeRef = useRef(null);
 
 	const handleActive = () => {
-		console.log(activeRef);
+		setActive(true);
 	};
 
 	useEffect(() => {
-		setActive(active);
-	}, []);
+		if (active === true) {
+			activeRef.current.style.border = "1px solid #DA7F16";
+			activeRef.current.style.backgroundColor = "#3A3A3A;";
+			activeRef.current.style.color = "#DA7F16";
+		}
+	}, [active]);
 
 	return (
 		<Input
 			ref={activeRef}
 			type={props.type}
 			placeholder={props.placeholder}
-			onClick={handleActive}
+			onFocus={handleActive}
 		/>
 	);
 };
